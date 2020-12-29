@@ -163,6 +163,7 @@ body {
 #customers {
   border-collapse: collapse;
   width: 100%;
+  margin: 20px;
 }
 
 #customers td,
@@ -202,15 +203,22 @@ body {
 @media only screen and (max-width: 660px) {
   .registerForm {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 2px outset#444;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 5px;
   }
+}
+.addCategoryForm {
+  width: 90%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px outset#444;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border-radius: 5px;
+}
+.categoryList {
+  margin: 0px;
 }
 /* This is for input*/
 input[type="text"],

@@ -26,7 +26,7 @@
             <div class="sideBar" id="sideBar">
                 <!-- this is the sidebar section-->
                 <ul>
-                    <a href="index.html"><li >Dashboard</li></a>
+                    <a href="index.html"><li>Dashboard</li></a>
                     <a href="index.html"><li>Orders</li></a>
                     <a href="product.html"><li>Products</li></a>
                     <a href="index.html"><li>Category</li></a>
@@ -34,40 +34,66 @@
                     <div style="display: none;" class="subSidebar" id="subMenu">
                         
                             <a href="uploadProduct.html"> Upload Product</a><br>
-                            <a href="Category.html"> Add Category</a>
+                            <a href="addCategory.html"> Add Category</a>
                         
                     </div>
                     <a href="index.html"><li>Dashboard</li></a>
                     
                 </ul>
                  </div> <!-- this is the sidebar section ends-->
-                 <div class="mainSection"> <!--Main section starts-->
-                    <div class="row">
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
+                 <div class=""><!--Main section starts-->
+                    <h3 style="text-align: center;margin: 10px;">Add Category</h3>
+                    <hr>
+                   <div class="addCategoryForm">
+                       <!--Register form starts-->
+                       <form name="addCategoryForms" action="postRegister.php" method="POST" onsubmit="return formValidation();">
+                        <label for="category">Category Name</label><label style="color:red;margin-left:10px;" id="categoryError"></label>
+                        <input type="text" id="category" name="category" placeholder="Category..">
+                        <!--/name input-->
+                       
+                        <!--Submit button-->
+                        <input type="submit" name="addCat" value="Submit">
+                      </form>
+                       <!--Register form ends-->
+                   </div>
+                   
+                        
+                      </div>
+                      <div class="categoryList">
+                          <h3 style="text-align: center;margin: 10px;">Category List</h3>
+                          <hr>
+                        <table id="customers">
+                            <tr>
+                              <th>Category_ID</th>
+                              <th>Category Name</th>
+                              <th>Action</th>
+                              </tr>
+                              <tr>
+                                  <td>01</td>
+                                  <td>Mobile Phone</td>
+                                  <td><a href="">Delete </a> | <a href=""> Edit</a></td>
+                              </tr>
+                              <tr>
+                                <td>02</td>
+                                <td>Laptop</td>
+                                <td><a href="">Delete </a> | <a href=""> Edit</a></td>
+                            </tr>
+                              </table>
                     </div>
-                   </div><!--Main section ends-->
+                     
+                  
            </div>
        </div>
        
            
-<!--This is the footer-->
+
+        <!--This is the footer-->
         <div class="footer">
-<div class="footerTitle">
-    <h3>&copy EShop.com | Admin Panel!</h3>
-</div>
-    
+            <div class="footerTitle">
+                <h3>&copy EShop.com | All right received!</h3>
             </div>
+                
+                        </div>
            
         </body>
     </html>
