@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            JS Intro
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="demo">
+        <div class="header">
+            <div class="topTitle">
+              <h2 >Admin Panel</h2>
+            </div>
+           
+            <nav class="nav">
+                <ul>
+                    <li>Profile</li>
+                    <li>Logout</li>
+                  
+                </ul>
+            </nav>
+
+        </div>
+       <div class="content">
+           <div class="row">
+            <div class="sideBar" id="sideBar">
+                <!-- this is the sidebar section-->
+                <ul>
+                    <a href="index.html"><li>Dashboard</li></a>
+                    <a href="index.html"><li>Orders</li></a>
+                    <a href="product.html"><li>Products</li></a>
+                    <a href="index.html"><li>Category</li></a>
+                    <a onclick="subMenu(this)"><li>Upload</li></a>
+                    <div style="display: none;" class="subSidebar" id="subMenu">
+                        
+                            <a href="uploadProduct.html"> Upload Product</a><br>
+                            <a href="index.html"> Add Category</a>
+                        
+                    </div>
+                    <a href="index.html"><li>Dashboard</li></a>
+                    
+                </ul>
+                 </div> <!-- this is the sidebar section ends-->
+                 <div class="registerForm"><!--Main section starts-->
+                    <h3 style="text-align: center;margin: 10px;">This is the total product list</h3>
+                    <hr>
+                   
+                        <!--Register form starts-->
+                        <form name="RegisterForms" action="postRegister.php" method="POST" onsubmit="return formValidation();">
+                          <label for="name">Product Name</label><label style="color:red;margin-left:10px;" id="nameError"></label>
+                          <input type="text" id="name" name="name" placeholder="Name..">
+                          <!--/name input-->
+                          <label for="pDescription">Product Description</label><label style="color:red;margin-left:10px;" id="usernameError"></label>
+                          <input type="text" id="pDescription" name="pDescription" placeholder="pDescription..">
+                          <!--/Username input-->
+                          <label>Contact no :       </label> <label style="color:red;margin-left:10px;" id="contactError"></label>
+                          <input type="text" name="contact" placeholder="Contact no.."><br> 
+                          <!--/Contact no-->
+                          <label>Email :       </label>
+                          <input type="email" name="email" placeholder="Email.."><br> 
+                           <!--/Email address-->
+                          <label>Category :       </label><select name="college">
+                            <option>Select Category</option>
+                            <option>Mobile Phone</option>
+                            <option>Laptop & PC</option>
+                            <option>Computer Accessories</option>
+                            <option>White Goods</option>
+                            <option>Lighting</option>
+                            <option>TV</option>
+                          </select>
+                           <!--/College info-->
+                          <label>Gender :       </label> <input type="radio" id="male" name="gender" value="male">
+                          Male</input>
+                          <input type="radio" id="female" name="gender" value="female">
+                          Female</input>
+                          <input type="radio" id="other" name="gender" value="other">
+                          Other</input><label style="color:red;margin-left:10px;" id="genderError"></label>
+                           <!--/Gender info-->
+                           <br>
+                          <label>Skills : </label><input type="checkbox" id="Java" name="skill" value="Java">
+                          Java
+                          <input type="checkbox" id="Android" name="skill" value="Android">
+                          Android
+                          <input type="checkbox" id="Ruby" name="skill" value="Ruby">
+                         Ruby
+                         <input type="checkbox" id=".Net" name=".skill" value=".Net">
+                         .Net <br>
+                          <!--/Skill info-->
+                          <label for="password">Password</label><label style="color:red;margin-left:10px;" id="passwordError"></label>
+                          <input type="password" id="password" name="password" placeholder="Password..">
+                           <!--/Password-->
+                          <label for="password">Re-type Password</label><label style="color:red;margin-left:10px;" id="passwordError"></label>
+                          <input type="password" id="repassword" name="repassword" placeholder="Password..">
+                          <!--/Retype password-->
+                          <!--Submit button-->
+                          <input type="submit" name="register" value="Register">
+                        </form>
+                         <!--Register form ends-->
+                        <hr>
+                        <P>Already have an account ? <a href="login.php"> Login here</a></P>
+                      </div>
+                      <!--/registerForm-->
+                  
+           </div>
+       </div>
+       
+           
+
+        <!--This is the footer-->
+        <div class="footer">
+            <div class="footerTitle">
+                <h3>&copy EShop.com | All right received!</h3>
+            </div>
+                
+                        </div>
+           
+        </body>
+    </html>
+<script>
+    //submenu button
+    function subMenu(b){
+        if(b.shefa != 'Click'){
+             b.shefa = "Click";
+            document.getElementById("subMenu").style.display="none";
+        //    document.getElementById("mobileNav").style.transition=".5s";
+         }//end if
+
+   //When click it again..
+       else if(b.shefa == 'Click'){
+           b.shefa = "Unclick";
+       document.getElementById("subMenu").style.display="block";
+       //document.getElementById("mobileNav").style.transition=".5s";
+         }//end else
+
+       
+    }
+//Slider JS code
+    var i = 0;
+    var time = 2000;
+    var image = [];
+     image[0] = "images/bt.jpg";
+     image[1] = "images/bb.jpg";
+     image[2] = "images/cx.jpg";
+     image[2] = "mc.jpg";
+     function slideShow(){
+        document.slide.src=image[i];
+        if(i < image.length-1){
+            i++;
+        }else{
+            i=0;
+        }
+        setTimeout("slideShow()", time);
+
+     }
+     window.onload = slideShow;
+   
+</script>
