@@ -1,4 +1,4 @@
-# sadhitro
+# AdminPanelDesign
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -6,7 +6,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#admin-dashboard">Dashboard</a></li>
       </ul>
     </li>
     <li>
@@ -24,3 +24,17 @@
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
+
+<!-- ABOUT THE PROJECT -->
+
+## about this project
+
+This project is just for design a simple admin panel using pure HTML,CSS, and JS.
+
+### admin-dashboard
+
+   <p align="center">
+    <a href="#">
+    <img src="images/dashboard.png" alt="Dashboard" width="80%" >
+  </a>
+   </p>
