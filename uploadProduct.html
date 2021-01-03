@@ -42,22 +42,28 @@
                 </ul>
                  </div> <!-- this is the sidebar section ends-->
                  <div class="registerForm"><!--Main section starts-->
-                    <h3 style="text-align: center;margin: 10px;">This is the total product list</h3>
+                    <h3 style="text-align: center;margin: 10px;">Upload new product here</h3>
                     <hr>
                    
                         <!--Register form starts-->
-                        <form name="RegisterForms" action="postRegister.php" method="POST" onsubmit="return formValidation();">
+                        <form name="RegisterForms" action="postProduct.php" method="POST" onsubmit="return productFormValidation();">
                           <label for="name">Product Name</label><label style="color:red;margin-left:10px;" id="nameError"></label>
                           <input type="text" id="name" name="name" placeholder="Name..">
                           <!--/name input-->
                           <label for="pDescription">Product Description</label><label style="color:red;margin-left:10px;" id="usernameError"></label>
-                          <input type="text" id="pDescription" name="pDescription" placeholder="pDescription..">
+                          <textarea class="textarea" name="pDescription" placeholder="Place some text here"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                           <!--/Username input-->
-                          <label>Contact no :       </label> <label style="color:red;margin-left:10px;" id="contactError"></label>
-                          <input type="text" name="contact" placeholder="Contact no.."><br> 
+                          <label>Product Specification :       </label> <label style="color:red;margin-left:10px;" id="contactError"></label>
+                          <textarea class="textarea" name="pspecification" placeholder="Place some text here"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea><br> 
                           <!--/Contact no-->
-                          <label>Email :       </label>
-                          <input type="email" name="email" placeholder="Email.."><br> 
+                          <label>Product Unite Price :       </label>
+                          <input type="text" name="unitPrice" placeholder="Price.."><br> 
+                           <!--/Email address-->
+                            <!--/Contact no-->
+                          <label>Product Quantity :       </label>
+                          <input type="number" name="productQuantity" value="1"><br> 
                            <!--/Email address-->
                           <label>Category :       </label><select name="college">
                             <option>Select Category</option>
@@ -68,36 +74,15 @@
                             <option>Lighting</option>
                             <option>TV</option>
                           </select>
-                           <!--/College info-->
-                          <label>Gender :       </label> <input type="radio" id="male" name="gender" value="male">
-                          Male</input>
-                          <input type="radio" id="female" name="gender" value="female">
-                          Female</input>
-                          <input type="radio" id="other" name="gender" value="other">
-                          Other</input><label style="color:red;margin-left:10px;" id="genderError"></label>
-                           <!--/Gender info-->
-                           <br>
-                          <label>Skills : </label><input type="checkbox" id="Java" name="skill" value="Java">
-                          Java
-                          <input type="checkbox" id="Android" name="skill" value="Android">
-                          Android
-                          <input type="checkbox" id="Ruby" name="skill" value="Ruby">
-                         Ruby
-                         <input type="checkbox" id=".Net" name=".skill" value=".Net">
-                         .Net <br>
-                          <!--/Skill info-->
-                          <label for="password">Password</label><label style="color:red;margin-left:10px;" id="passwordError"></label>
-                          <input type="password" id="password" name="password" placeholder="Password..">
-                           <!--/Password-->
-                          <label for="password">Re-type Password</label><label style="color:red;margin-left:10px;" id="passwordError"></label>
-                          <input type="password" id="repassword" name="repassword" placeholder="Password..">
-                          <!--/Retype password-->
+                          <label class="custom-file-label" for="exampleInputFile">Choose file</label><br>
+                          <input type="file" name="image" class="custom-file-input" id="exampleInputFile">
+                     
                           <!--Submit button-->
-                          <input type="submit" name="register" value="Register">
+                          <input type="submit" name="submitProduct" value="Submit">
                         </form>
                          <!--Register form ends-->
                         <hr>
-                        <P>Already have an account ? <a href="login.php"> Login here</a></P>
+                     
                       </div>
                       <!--/registerForm-->
                   
