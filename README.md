@@ -7,6 +7,7 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#admin-dashboard">Dashboard</a></li>
+        <li><a href="#admin-profile">Admin Profile</a></li>
       </ul>
     </li>
     <li>
@@ -27,7 +28,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## about this project
+## about the project
 
 This project is just for design a simple admin panel using pure HTML,CSS, and JS.
 

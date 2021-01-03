@@ -187,7 +187,30 @@ body {
   background-color: #4caf50;
   color: white;
 }
-
+.pagination {
+  position: absolute;
+  right: 70px;
+}
+.pagination ul {
+  list-style: none;
+  display: flex;
+}
+.pagination ul a {
+  text-decoration: none;
+  color: #777;
+}
+.pagination ul a li {
+  margin: 5px;
+  display: block;
+  padding: 5;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.pagination ul a li:hover {
+  background-color: #aaaaaa;
+  color: #f1f1f1;
+  transition: 1s;
+}
 /* Product upload*/
 .registerForm {
   width: 50%;
