@@ -12,7 +12,7 @@ body {
   padding-top: 20px;
 }
 .sideBar {
-  background-color: #777;
+  background-color: cadetblue;
   width: 20%;
   min-height: 500px;
 }
@@ -30,7 +30,7 @@ body {
 .sideBar ul a li:hover {
   display: block;
   text-align: center;
-  background-color: #444;
+  background-color: #333;
   color: #fff;
 }
 .sideBar ul a {
@@ -39,7 +39,7 @@ body {
 }
 .subSidebar {
   margin: 2px;
-  background-color: #333;
+  background-color: #444;
 }
 .subSidebar a {
   padding: 5px;
@@ -189,7 +189,7 @@ body {
 }
 .pagination {
   position: absolute;
-  right: 70px;
+  right: 50px;
 }
 .pagination ul {
   list-style: none;
@@ -322,11 +322,38 @@ textarea {
 .footer {
   height: 50px;
   width: 100%;
-  background-color: #777;
+  background-color: cadetblue;
   color: fff;
 }
 .footerTitle {
   position: relative;
   padding-top: 10px;
   text-align: center;
+}
+/* This is for product details page */
+.detailContent {
+  margin: 20px;
+  max-width: 869px;
+  line-height: 30px;
+}
+.detailImage {
+  margin: 10px;
+}
+.detailsText {
+  margin: 10px;
+}
+.productDetailsHead {
+  height: 70px;
+  margin: 10px;
+}
+.productDetailsHead a {
+  text-decoration: none;
+  margin: 10px;
+  width: 140px;
+  color: #fff;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

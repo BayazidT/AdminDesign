@@ -26,7 +26,7 @@
             <div class="sideBar" id="sideBar">
                 <!-- this is the sidebar section-->
                 <ul>
-                    <a href="index.html"><li >Dashboard</li></a>
+                    <a href="index.html"><li>Dashboard</li></a>
                     <a href="index.html"><li>Orders</li></a>
                     <a href="product.html"><li>Products</li></a>
                     <a href="index.html"><li>Category</li></a>
@@ -34,57 +34,61 @@
                     <div style="display: none;" class="subSidebar" id="subMenu">
                         
                             <a href="uploadProduct.html"> Upload Product</a><br>
-                            <a href="Category.html"> Add Category</a>
+                            <a href="addCategory.html"> Add Category</a>
                         
                     </div>
-                    <a href="user.html"><li>Users</li></a>
+                    <a href="index.html"><li>Dashboard</li></a>
                     
                 </ul>
                  </div> <!-- this is the sidebar section ends-->
                  <div class="mainSection"> <!--Main section starts-->
-                    <div class="row">
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
-                        <div class="card">
-                            <h3>Hello</h3>
-                        </div>
+                   
+                        <h3 style="text-align: center;margin: 10px;">This is the bulb details</h3>
+                    <hr>
+                    <div class="detailContent">
+                    <div class="productDetailsHead">
+                        <h3>Product Name :  Bulb</h3><a style="background: cadetblue;" href="productUpdate">Edit</a><a style="background: red;" href="?action=delete">Delete</a>
+                    </div>
+                   <div class="detailImage">
+                    <img src="images/dashboard.png" style="width: 600px;margin: 0 auto;">
+                   </div>
+                  <div class="detailsText">
+                    <p><span style="font-weight: bold;" >Description :</span> LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...</p>
+                    <p><span style="font-weight: bold;" >Specification :</span> LED is very efficient in terms of energy  </p>
+                    <p><span style="font-weight: bold;" >Quantity : 120 units</span></p>
+                    <p><span style="font-weight: bold;" >Price : 43 $</span></p>
+                    <p><span style="font-weight: bold;" >Upload Time : 12:23 pm</span></p>
+                  </div>
                     </div>
                    </div><!--Main section ends-->
            </div>
        </div>
        
            
-<!--This is the footer-->
+
+        <!--This is the footer-->
         <div class="footer">
-<div class="footerTitle">
-    <h3>&copy EShop.com | Admin Panel!</h3>
-</div>
-    
+            <div class="footerTitle">
+                <h3>&copy EShop.com | All right received!</h3>
             </div>
+                
+                        </div>
            
         </body>
     </html>
 <script>
     //submenu button
     function subMenu(b){
-        
         if(b.shefa != 'Click'){
              b.shefa = "Click";
-            document.getElementById("subMenu").style.display="block";
+            document.getElementById("subMenu").style.display="none";
         //    document.getElementById("mobileNav").style.transition=".5s";
          }//end if
 
    //When click it again..
        else if(b.shefa == 'Click'){
            b.shefa = "Unclick";
-       document.getElementById("subMenu").style.display="none";
+       document.getElementById("subMenu").style.display="block";
        //document.getElementById("mobileNav").style.transition=".5s";
          }//end else
 
