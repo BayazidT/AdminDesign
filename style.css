@@ -335,6 +335,22 @@ textarea {
   background-color: #f8f8f8;
   resize: none;
 }
+
+/* Order related style */
+.OrderRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 5px;
+}
+.customerInfo,
+.orderInfo {
+  background-color: #f1f1f1;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  line-height: 25px;
+}
 .footer {
   height: 50px;
   width: 100%;

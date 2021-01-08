@@ -44,7 +44,7 @@
                     <div style="display: none;" class="subSidebar" id="subMenu">
                         
                             <a href="uploadProduct.html"> Upload Product</a><br>
-                            <a href="Category.html"> Add Category</a>
+                            <a href="addCategory.html"> Add Category</a>
                         
                     </div>
                     <a href="user.html"><li>  <i class="nav-icon fas fa-users"></i>Users</li></a>
@@ -52,24 +52,84 @@
                 </ul>
                  </div> <!-- this is the sidebar section ends-->
                  <div class="mainSection"> <!--Main section starts-->
-                   
-                        <h3 style="text-align: center;margin: 10px;">This is the bulb details</h3>
+                    <h3 style="text-align: center;margin: 10px;">This is the total order list</h3>
                     <hr>
-                    <div class="detailContent">
-                    <div class="productDetailsHead">
-                        <h3>Product Name :  Bulb</h3><a style="background: cadetblue;" href="productUpdate">Edit</a><a style="background: red;" href="?action=delete">Delete</a>
-                    </div>
-                   <div class="detailImage">
-                    <img src="images/dashboard.png" style="width: 600px;margin: 0 auto;">
-                   </div>
-                  <div class="detailsText">
-                    <p><span style="font-weight: bold;" >Description :</span> LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...LED Means light emitting diode...</p>
-                    <p><span style="font-weight: bold;" >Specification :</span> LED is very efficient in terms of energy  </p>
-                    <p><span style="font-weight: bold;" >Quantity : 120 units</span></p>
-                    <p><span style="font-weight: bold;" >Price : 43 $</span></p>
-                    <p><span style="font-weight: bold;" >Upload Time : 12:23 pm</span></p>
-                  </div>
-                    </div>
+                    <table id="customers">
+                        <tr>
+                          <th>Order_ID</th>
+                          <th>Customer Name</th>
+                          <th>Order Time</th>
+                          <th>Address</th>
+                          <th>Email</th>
+                          <th>Mobile No.</th>
+                          <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Image</td>
+                            <td>This is LED light</td>
+                            <td>12:32pm</td>
+                            <td>BTN</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Image</td>
+                            <td>This is LED light</td>
+                            <td>12:32pm</td>
+                            <td>BTN</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Image</td>
+                            <td>This is LED light</td>
+                            <td>12:32pm</td>
+                            <td>BTN</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Image</td>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Bulb</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Image</td>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>01</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>01</td>
+                            <td>01</td>
+                            <td>Bulb</td>
+                            <td>Bulb</td>
+                            <td><a href="orderDetails.html">Order Details</a> </td>
+                        </tr>
+                        </table>
+                        <div class="pagination">
+                            <ul>
+                               <a href="#"><li> << </li></a> 
+                               <a href="#"><li> 01 </li></a> 
+                               <a href="#"><li> 02 </li></a> 
+                               <a href="#"><li> 03 </li></a> 
+                               <a href="#"><li> 04 </li></a> 
+                               <a href="#"><li> >> </li></a> 
+                               
+                            </ul>
+                        </div>
                    </div><!--Main section ends-->
            </div>
        </div>
