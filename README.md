@@ -29,7 +29,7 @@ This project is just for design a simple admin panel using pure HTML,CSS, and JS
 
    <p align="center">
     <a href="#">
-    <img src="images/readme/login.png" alt="Dashboard" width="90%" >
+    <img src="images/readme/loginPage.png" alt="Dashboard" width="90%" >
   </a>
    </p>
 
