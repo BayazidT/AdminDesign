@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           Admin
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+<script src="js/functions.js"></script>
+    </head>
+    <body id="demo">
+        <div class="header">
+            <div class="topTitle">
+              <h2 >Admin Panel</h2>
+            </div>
+           
+            <nav class="nav">
+                <ul>
+                    <li>Profile</li>
+                    <li>Logout</li>
+                  
+                </ul>
+            </nav>
+
+        </div>
+       <div class="content">
+           <div class="row">
+            <div class="sideBar" id="sideBar">
+                <!-- this is the sidebar section-->
+                <a style="text-decoration: none;" href="adminProfile.html">
+                  <div class="adminProfile">
+                    <img class="adminProfileImg" src="images/btlogo.png">
+                    <p>BT Nirob</p>
+                   
+                  </div>
+                </a>
+                <hr>
+                <ul>
+                    <a href="index.html"><li > <i class="nav-icon fas fa-tachometer-alt"></i>Dashboard</li></a>
+                    <a href="customerOrders.html"><li><i class="nav-icon fa fa-cart-plus"></i>Orders</li></a>
+                    <a href="product.html"><li>  <i class="nav-icon fas fa-table"></i>Products</li></a>
+                    <a href="addCategory.html"><li><i class="nav-icon fa fa-list-alt" ></i>Category</li></a>
+                    <a onclick="subMenu(this)"><li> <i class="nav-icon fas fa-edit"></i>Upload</li></a>
+                    <div style="display: none;" class="subSidebar" id="subMenu">
+                        
+                            <a href="uploadProduct.html"> Upload Product</a><br>
+                            <a href="addCategory.html"> Add Category</a>
+                        
+                    </div>
+                    <a href="user.html"><li>  <i class="nav-icon fas fa-users"></i>Users</li></a>
+                    
+                </ul>
+                 </div> <!-- this is the sidebar section ends-->
+                 <div class="mainSection"> <!--Main section starts-->
+                  
+                   <div class="adminProfileInfo">
+                    <img  src="images/btlogo.png">
+                    <div class="profileTitle">
+                        <h3>Welcome BT Nirob </h3>
+                    </div>
+                    <hr>
+                    <div class="adminOtherInfo">
+                       <h4> Full Name : Bayazid Talukder Nirob <span><a style="text-decoration: none;color:#777;font-size: small;margin-left: 400px;" href="adminProfileUpdate">Edit</a></span></h4>
+                       <p>Email : btnirob13@gmail.com</p>
+                       <p>Mobile : 01772242616</p>
+                       <p>Lives in : Dhaka, Bangladesh </p>
+                       <p>Address : Namapara Road, Khilkhet Dhaka-1229</p>
+                    </div>
+                   </div>
+                    
+                   </div><!--Main section ends-->
+           </div>
+       </div>
+       
+           
+<!--This is the footer-->
+        <div class="footer">
+<div class="footerTitle">
+    <h3>&copy EShop.com | Admin Panel!</h3>
+</div>
+    
+            </div>
+           
+        </body>
+    </html>
